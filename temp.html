@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/temp.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <title>final</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body class="main">
+    <div>
+        <nav>
+            <div class="icon">
+                <h2 class="logo">Multiplex</h2>
+            </div>
+            <div class="navbar1">
+                <ul>
+                    <li><a href="#">Signup</a></li>
+                    <li><a href="#">Signin</a></li>
+                    <li><a href="#">Admin</a></li>
+                    <li><a href="#">Menu</a></li>
+                </ul>
+            </div>
+            <div class="search">
+                <input type="search" placeholder="Search movie" class="srch">
+            </div>
+        </nav>
+
+        <section class="topsec">
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="https://assets-in.bmscdn.com/promotions/cms/creatives/1662022727498_eoe_.jpg"
+                            class="d-block w-100" alt="...">
+                    </div>
+
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="https://assets-in.bmscdn.com/promotions/cms/creatives/1661886270194_wea.jpg"
+                            class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://assets-in.bmscdn.com/promotions/cms/creatives/1663059012231_sspweb.jpg"
+                            class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+        <br><br><br>
+
+
+        <!--images-->
+        <div class="container">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper" id="mcard" style="width: 18rem;">
+
+                </div>
+                <div class="swiper-button-next" ></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+        <!-- <div class="card" style="width: 18rem;" id="temp1">
+            <img src="./3.jpg" class="card-img-top" alt="...">
+            <div class="card-body" id="img1">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div> -->
+          <div class="card text-center">
+            <div class="card-header">
+              Featured
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+            <div class="card-footer text-muted">
+              2 days ago
+            </div>
+          </div>
+
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 4,
+            spaceBetween: 40,
+            slidesPerGroup: 3,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+
+        fetch('people.json')
+            .then(function (response) {
+                return response.json();
+            })
+            .then(function (data) {
+                appendData(data);
+            })
+            .catch(function (err) {
+                console.log('error: ' + err);
+            });
+        function appendData(data) {
+            var mainContainer = document.getElementById("mcard");
+            for (var i = 0; i < data.length; i++) {
+                var div = document.createElement("div");
+                // div.innerHTML = 'Movie ID: ' + data[i].movie_id + ' ' + data[i].title + " " + data[i].category_name + `<img src="${data[i].image}">`;
+                div.classList.add("swiper-slide");
+                div.classList.add("flex-column");
+                div.innerHTML = `<img src="${data[i].image}" href="./bookSeats.html" target="_blank" onClick="redirect()" class="cimg" id="card${data[i].movie_id}">
+                
+                <div class="hoverBox">
+                    <h4>${data[i].title}</h4>
+                    <h6>${data[i].category_name}</h6>
+                    <h6>${data[i].release_year}</h6>
+                    <h6>${data[i].running_time}</h6>
+                    <h6>${data[i].language}</h6>
+                
+                </div>
+                
+                `;
+                mainContainer.appendChild(div);
+            }
+        }
+
+        // let card1 = document.getElementsByClassName("cimg");
+        // card1.addEventListener("click", redirect());
+
+        function redirect(){
+            console.log("redirect");
+            window.location.href = "./bookSeats.html";
+        }
+
+       
+
+    </script>
+</body>
+
+</html>

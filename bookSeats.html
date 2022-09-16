@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/index.css">
+    <title>Deloitte Show : Book Seats</title>
+</head>
+
+<body>
+
+    <div id="contact">
+        <h2 class="center" id="heading">Book Your Seats</h2>
+        <div id="inform">
+            <form action="./temp.html">
+                <table class="my-3 py-3">
+                    <tbody>
+                        <tr>
+                            <div class="fields">
+                                <th>
+                                    <label for="date">Select Date</label>
+                                </th>
+                                <td>
+
+                                    <input type="date" id="date" name="date" required>
+                                </td>
+                            </div>
+                        </tr>
+                        <tr>
+                            <div class="fields">
+                                <th>
+                                    <label for="date">Show Timing</label>
+                                </th>
+                                <td>
+                                    <select class="form-select" name="showTime" id="showTime" required>
+                                        <option value="">Select show time</option>
+                                        <option value="1">12:00 PM</option>
+                                        <option value="2">4:00 PM</option>
+                                        <option value="3">7:30 PM</option>
+                                        <option value="3">11:00 PM</option>
+                                    </select>
+                                </td>
+                            </div>
+                        </tr>
+                        <tr>
+                            <div class="fields">
+                                <th>
+                                    <label for="seatType">Select seat type</label>
+                                </th>
+                                <td>
+                                    <select class="form-select" aria-label="Default select example" required>
+                                        <option value="">Select seat type</option>
+                                        <option value="normal">Normal</option>
+                                        <option value="executive">Executive</option>
+                                        <option value="premium">Premium</option>
+                                    </select>
+                                </td>
+                            </div>
+                        </tr>
+                        <tr>
+                            <div class="fields">
+                                <th>
+                                    <label for="seats">No. of Seats</label>
+                                </th>
+                                <td>
+                                    <input type="number" id="seats" name="seats" required>
+                                </td>
+                            </div>
+                        </tr>
+
+
+                    </tbody>
+                </table>
+                <button id="btn" type="submit">Book Now</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+[
+    {
+        "movie_id": 1,
+        "title": "Top Gun Maverick",
+        "category_name": "Action/Adventure/Drama",
+        "release_year": 2022,
+        "running_time": "2h 11m",
+        "language": "English",
+        "image": "https://wallpapercave.com/dwp2x/wp11111887.jpg",
+        "dialogue":"All right sweetheart one last ride",
+        "cast":"Tom Cruise,Miles Teller"
+    },
+    {
+        "movie_id": 2,
+        "title": "Brahmastra:Part One-Shiva",
+        "category_name": "Adventure/Fantasy",
+        "release_year": 2022,
+        "running_time": "2h 47m",
+        "language": "Hindi",
+        "image": "https://akm-img-a-in.tosshub.com/businesstoday/images/story/202209/whatsapp_image_2022-09-12_at_2-sixteen_nine.jpeg?size=948:533",
+        "dialogue":"मैं आग से जलता नहीं, कुछ रिश्ता है मेरा आग से, आग मुझे जलाती नहीं...",
+        "cast":"Ranbir Kapoor, Alia Bhatt"
+    },
+    {
+        "movie_id": 3,
+        "title": "Thor:Love and Thunder",
+        "category_name": "Action/Adventure",
+        "release_year": 2022,
+        "running_time": "1h 59m",
+        "language": "English",
+        "image": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/6331e0d5-2fe0-4642-ac50-708493d201ef/df2nmpa-8028ac19-b84b-494f-995b-3f86aff1fdbf.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzYzMzFlMGQ1LTJmZTAtNDY0Mi1hYzUwLTcwODQ5M2QyMDFlZlwvZGYybm1wYS04MDI4YWMxOS1iODRiLTQ5NGYtOTk1Yi0zZjg2YWZmMWZkYmYuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.6Y-MrvcPo3Rh1E0ZFeg1u0pAJzqtzTLtg7iSAhM21Fk",
+        "dialogue":"Asgard is not a place, it's a people",
+        "cast":"Chris Hemsworth, Christian Bale"
+    },
+    {
+        "movie_id": 4,
+        "title": "Sita Ramam",
+        "category_name": "Romantic drama",
+        "release_year": 2022,
+        "running_time": "2h 43m",
+        "language": "Telugu",
+        "image": "https://th.bing.com/th?id=OIF.02l2uxzjFPoqVIQbH4%2bJXQ&pid=ImgDet&rs=1",
+        "dialogue":": కురుక్షేత్రంలో రావణ సంహారం... యుద్ధపు వెలుగులో సీతా స్వయంవరం",
+        "cast":"Dulquer Salmaan, Mrunal Thakur"
+    },
+    {
+        "movie_id":5,
+        "title":"3 idiots",
+        "category_name":"Comedy, Drama, Romance",
+        "release_year":2009,
+        "running_time":"2h 50m",
+        "language":"Hindi",
+        "image":"3idiots.jpg",
+        "dialogue":"All izz well",
+        "cast":"Aamir Khan, R. Madhavan, Sharman Joshi"
+
+    },
+    {
+        "movie_id":6,
+        "title":"Yeh Jawaani Hai Deewani",
+        "category_name":"Comedy, Drama, Romance",
+        "running_time":"2h 39m",
+        "release_year":2013,
+        "language":"Hindi",
+        "image":"yjhd.webp",
+        "dialogue":"लाइफ में जितना भी try करो, कुछ न कुछ तो छूटेगा ही. इसलिए यही, इसी पल का मज़ा लेते हैं",
+        "cast":"Ranbir Kapoor, Deepika Padukone"
+    },
+    {
+        "movie_id":7,
+        "title":"Pokiri",
+        "category_name":"Action, Thriller",
+        "running_time":"2h 35m",
+        "release_year":2006,
+        "language":"Telugu",
+        "image":"Pokiri.webp",
+        "dialogue":"ఎవడు కొడితే దిమ్మ తిరిగి మైండ్ బ్లాక్ అయిపోదో ఆడే పండు గాడు",
+        "cast":"Mahesh Babu, Ileana D'Cruz"
+    },
+    {
+        "movie_id":8,
+        "title":"83",
+        "category_name":"Sports, Drama",
+        "running_time":"2h 45m",
+        "release_year":2021,
+        "language":"Hindi",
+        "image":"83.webp",
+        "dialogue":"Taste success once, tongue wants more",
+        "cast":"Ranveer Singh, Deepika Padukone"
+    }
+]
